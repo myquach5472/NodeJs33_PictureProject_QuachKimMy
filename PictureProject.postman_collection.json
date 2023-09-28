@@ -1,0 +1,752 @@
+{
+	"info": {
+		"_postman_id": "b9336f40-27f7-476f-a9c4-4c6465c79fae",
+		"name": "PictureProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29078873"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User_getUserByName",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEsImVtYWlsIjoidXNlcjFAZXhhbXBsZS5jb20iLCJtYXRfa2hhdSI6InBhc3N3b3JkMSIsImhvX3RlbiI6Ik5ndXnhu4VuIFbEg24gQSIsInR1b2kiOjMwLCJhbmhfZGFpX2RpZW4iOiJ1c2VyMS5qcGcifSwiaWF0IjoxNjk1OTIzNzQzLCJleHAiOjE2OTg1MTU3NDN9.sFkWVKid0BsXAfShr-9y-j_LFag9ch4wsjX_mPpgKGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/nguoiDung/get-user-by-name/:fullName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"nguoiDung",
+								"get-user-by-name",
+								":fullName"
+							],
+							"variable": [
+								{
+									"key": "fullName",
+									"value": "a"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User_getAllUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEsImVtYWlsIjoidXNlcjFAZXhhbXBsZS5jb20iLCJtYXRfa2hhdSI6InBhc3N3b3JkMSIsImhvX3RlbiI6Ik5ndXnhu4VuIFbEg24gQSIsInR1b2kiOjMwLCJhbmhfZGFpX2RpZW4iOiJ1c2VyMS5qcGcifSwiaWF0IjoxNjk1OTIzNzQzLCJleHAiOjE2OTg1MTU3NDN9.sFkWVKid0BsXAfShr-9y-j_LFag9ch4wsjX_mPpgKGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/nguoiDung/get-all-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"nguoiDung",
+								"get-all-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User_login",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/nguoiDung/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"nguoiDung",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User_createUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/nguoiDung/create-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"nguoiDung",
+								"create-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User_updateUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEsImVtYWlsIjoidXNlcjFAZXhhbXBsZS5jb20iLCJtYXRfa2hhdSI6InBhc3N3b3JkMSIsImhvX3RlbiI6Ik5ndXnhu4VuIFbEg24gQSIsInR1b2kiOjMwLCJhbmhfZGFpX2RpZW4iOiJ1c2VyMS5qcGcifSwiaWF0IjoxNjk1OTIzNzQzLCJleHAiOjE2OTg1MTU3NDN9.sFkWVKid0BsXAfShr-9y-j_LFag9ch4wsjX_mPpgKGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/nguoiDung/update-user/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"nguoiDung",
+								"update-user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User_deleteUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEsImVtYWlsIjoidXNlcjFAZXhhbXBsZS5jb20iLCJtYXRfa2hhdSI6InBhc3N3b3JkMSIsImhvX3RlbiI6Ik5ndXnhu4VuIFbEg24gQSIsInR1b2kiOjMwLCJhbmhfZGFpX2RpZW4iOiJ1c2VyMS5qcGcifSwiaWF0IjoxNjk1OTIzNzQzLCJleHAiOjE2OTg1MTU3NDN9.sFkWVKid0BsXAfShr-9y-j_LFag9ch4wsjX_mPpgKGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/nguoiDung/delete-user/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"nguoiDung",
+								"delete-user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "HinhAnh",
+			"item": [
+				{
+					"name": "HinhAnh_getAllHinhAnh",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEsImVtYWlsIjoidXNlcjFAZXhhbXBsZS5jb20iLCJtYXRfa2hhdSI6InBhc3N3b3JkMSIsImhvX3RlbiI6Ik5ndXnhu4VuIFbEg24gQSIsInR1b2kiOjMwLCJhbmhfZGFpX2RpZW4iOiJ1c2VyMS5qcGcifSwiaWF0IjoxNjk1OTIzNzQzLCJleHAiOjE2OTg1MTU3NDN9.sFkWVKid0BsXAfShr-9y-j_LFag9ch4wsjX_mPpgKGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hinhAnh/get-all-hinh-anh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hinhAnh",
+								"get-all-hinh-anh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HinhAnh_getHinhAnhByUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEsImVtYWlsIjoidXNlcjFAZXhhbXBsZS5jb20iLCJtYXRfa2hhdSI6InBhc3N3b3JkMSIsImhvX3RlbiI6Ik5ndXnhu4VuIFbEg24gQSIsInR1b2kiOjMwLCJhbmhfZGFpX2RpZW4iOiJ1c2VyMS5qcGcifSwiaWF0IjoxNjk1OTIzNzQzLCJleHAiOjE2OTg1MTU3NDN9.sFkWVKid0BsXAfShr-9y-j_LFag9ch4wsjX_mPpgKGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hinhAnh/get-hinh-anh-by-user/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hinhAnh",
+								"get-hinh-anh-by-user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HinhAnh_getHinhAnhByTenHinh",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEsImVtYWlsIjoidXNlcjFAZXhhbXBsZS5jb20iLCJtYXRfa2hhdSI6InBhc3N3b3JkMSIsImhvX3RlbiI6Ik5ndXnhu4VuIFbEg24gQSIsInR1b2kiOjMwLCJhbmhfZGFpX2RpZW4iOiJ1c2VyMS5qcGcifSwiaWF0IjoxNjk1OTIzNzQzLCJleHAiOjE2OTg1MTU3NDN9.sFkWVKid0BsXAfShr-9y-j_LFag9ch4wsjX_mPpgKGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hinhAnh/get-hinh-anh-by-ten-hinh/:tenHinh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hinhAnh",
+								"get-hinh-anh-by-ten-hinh",
+								":tenHinh"
+							],
+							"variable": [
+								{
+									"key": "tenHinh",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HinhAnh_createHinhAnh",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEsImVtYWlsIjoidXNlcjFAZXhhbXBsZS5jb20iLCJtYXRfa2hhdSI6InBhc3N3b3JkMSIsImhvX3RlbiI6Ik5ndXnhu4VuIFbEg24gQSIsInR1b2kiOjMwLCJhbmhfZGFpX2RpZW4iOiJ1c2VyMS5qcGcifSwiaWF0IjoxNjk1OTIzNzQzLCJleHAiOjE2OTg1MTU3NDN9.sFkWVKid0BsXAfShr-9y-j_LFag9ch4wsjX_mPpgKGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hinhAnh/create-hinh-anh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hinhAnh",
+								"create-hinh-anh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HinhAnh_updateHinhAnh",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEsImVtYWlsIjoidXNlcjFAZXhhbXBsZS5jb20iLCJtYXRfa2hhdSI6InBhc3N3b3JkMSIsImhvX3RlbiI6Ik5ndXnhu4VuIFbEg24gQSIsInR1b2kiOjMwLCJhbmhfZGFpX2RpZW4iOiJ1c2VyMS5qcGcifSwiaWF0IjoxNjk1OTIzNzQzLCJleHAiOjE2OTg1MTU3NDN9.sFkWVKid0BsXAfShr-9y-j_LFag9ch4wsjX_mPpgKGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hinhAnh/update-hinh-anh/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hinhAnh",
+								"update-hinh-anh",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LuuAnh",
+			"item": [
+				{
+					"name": "LuuAnh_getAllNgayLuu",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEsImVtYWlsIjoidXNlcjFAZXhhbXBsZS5jb20iLCJtYXRfa2hhdSI6InBhc3N3b3JkMSIsImhvX3RlbiI6Ik5ndXnhu4VuIFbEg24gQSIsInR1b2kiOjMwLCJhbmhfZGFpX2RpZW4iOiJ1c2VyMS5qcGcifSwiaWF0IjoxNjk1OTIzNzQzLCJleHAiOjE2OTg1MTU3NDN9.sFkWVKid0BsXAfShr-9y-j_LFag9ch4wsjX_mPpgKGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/luuHinh/get-all-ngay-luu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"luuHinh",
+								"get-all-ngay-luu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LuuAnh_getNgayLuuByUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEsImVtYWlsIjoidXNlcjFAZXhhbXBsZS5jb20iLCJtYXRfa2hhdSI6InBhc3N3b3JkMSIsImhvX3RlbiI6Ik5ndXnhu4VuIFbEg24gQSIsInR1b2kiOjMwLCJhbmhfZGFpX2RpZW4iOiJ1c2VyMS5qcGcifSwiaWF0IjoxNjk1OTIzNzQzLCJleHAiOjE2OTg1MTU3NDN9.sFkWVKid0BsXAfShr-9y-j_LFag9ch4wsjX_mPpgKGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/luuHinh/get-ngay-luu-by-user/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"luuHinh",
+								"get-ngay-luu-by-user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LuuAnh_getNgayLuuByTenHinh",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEsImVtYWlsIjoidXNlcjFAZXhhbXBsZS5jb20iLCJtYXRfa2hhdSI6InBhc3N3b3JkMSIsImhvX3RlbiI6Ik5ndXnhu4VuIFbEg24gQSIsInR1b2kiOjMwLCJhbmhfZGFpX2RpZW4iOiJ1c2VyMS5qcGcifSwiaWF0IjoxNjk1OTIzNzQzLCJleHAiOjE2OTg1MTU3NDN9.sFkWVKid0BsXAfShr-9y-j_LFag9ch4wsjX_mPpgKGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/luuHinh/get-ngay-luu-by-hinh/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"luuHinh",
+								"get-ngay-luu-by-hinh",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LuuAnh_createNgayLuu",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEsImVtYWlsIjoidXNlcjFAZXhhbXBsZS5jb20iLCJtYXRfa2hhdSI6InBhc3N3b3JkMSIsImhvX3RlbiI6Ik5ndXnhu4VuIFbEg24gQSIsInR1b2kiOjMwLCJhbmhfZGFpX2RpZW4iOiJ1c2VyMS5qcGcifSwiaWF0IjoxNjk1OTIzNzQzLCJleHAiOjE2OTg1MTU3NDN9.sFkWVKid0BsXAfShr-9y-j_LFag9ch4wsjX_mPpgKGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/luuHinh/create-ngay-luu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"luuHinh",
+								"create-ngay-luu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LuuAnh_updateNgayLuu",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEsImVtYWlsIjoidXNlcjFAZXhhbXBsZS5jb20iLCJtYXRfa2hhdSI6InBhc3N3b3JkMSIsImhvX3RlbiI6Ik5ndXnhu4VuIFbEg24gQSIsInR1b2kiOjMwLCJhbmhfZGFpX2RpZW4iOiJ1c2VyMS5qcGcifSwiaWF0IjoxNjk1OTIzNzQzLCJleHAiOjE2OTg1MTU3NDN9.sFkWVKid0BsXAfShr-9y-j_LFag9ch4wsjX_mPpgKGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/luuHinh/update-ngay-luu/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"luuHinh",
+								"update-ngay-luu",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BinhLuan",
+			"item": [
+				{
+					"name": "BinhLuan_getAllBinhLuan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEsImVtYWlsIjoidXNlcjFAZXhhbXBsZS5jb20iLCJtYXRfa2hhdSI6InBhc3N3b3JkMSIsImhvX3RlbiI6Ik5ndXnhu4VuIFbEg24gQSIsInR1b2kiOjMwLCJhbmhfZGFpX2RpZW4iOiJ1c2VyMS5qcGcifSwiaWF0IjoxNjk1OTIzNzQzLCJleHAiOjE2OTg1MTU3NDN9.sFkWVKid0BsXAfShr-9y-j_LFag9ch4wsjX_mPpgKGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/binhLuan/get-all-binh-luan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"binhLuan",
+								"get-all-binh-luan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BinhLuan_getBinhLuanByUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEsImVtYWlsIjoidXNlcjFAZXhhbXBsZS5jb20iLCJtYXRfa2hhdSI6InBhc3N3b3JkMSIsImhvX3RlbiI6Ik5ndXnhu4VuIFbEg24gQSIsInR1b2kiOjMwLCJhbmhfZGFpX2RpZW4iOiJ1c2VyMS5qcGcifSwiaWF0IjoxNjk1OTIzNzQzLCJleHAiOjE2OTg1MTU3NDN9.sFkWVKid0BsXAfShr-9y-j_LFag9ch4wsjX_mPpgKGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/binhLuan/get-binh-luan-by-user/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"binhLuan",
+								"get-binh-luan-by-user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BinhLuan_getBinhLuanByHinh",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEsImVtYWlsIjoidXNlcjFAZXhhbXBsZS5jb20iLCJtYXRfa2hhdSI6InBhc3N3b3JkMSIsImhvX3RlbiI6Ik5ndXnhu4VuIFbEg24gQSIsInR1b2kiOjMwLCJhbmhfZGFpX2RpZW4iOiJ1c2VyMS5qcGcifSwiaWF0IjoxNjk1OTIzNzQzLCJleHAiOjE2OTg1MTU3NDN9.sFkWVKid0BsXAfShr-9y-j_LFag9ch4wsjX_mPpgKGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/binhLuan/get-binh-luan-by-hinh/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"binhLuan",
+								"get-binh-luan-by-hinh",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BinhLuan_createBinhLuan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEsImVtYWlsIjoidXNlcjFAZXhhbXBsZS5jb20iLCJtYXRfa2hhdSI6InBhc3N3b3JkMSIsImhvX3RlbiI6Ik5ndXnhu4VuIFbEg24gQSIsInR1b2kiOjMwLCJhbmhfZGFpX2RpZW4iOiJ1c2VyMS5qcGcifSwiaWF0IjoxNjk1OTIzNzQzLCJleHAiOjE2OTg1MTU3NDN9.sFkWVKid0BsXAfShr-9y-j_LFag9ch4wsjX_mPpgKGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/binhLuan/create-binh-luan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"binhLuan",
+								"create-binh-luan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BinhLuan_updateBinhLuan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEsImVtYWlsIjoidXNlcjFAZXhhbXBsZS5jb20iLCJtYXRfa2hhdSI6InBhc3N3b3JkMSIsImhvX3RlbiI6Ik5ndXnhu4VuIFbEg24gQSIsInR1b2kiOjMwLCJhbmhfZGFpX2RpZW4iOiJ1c2VyMS5qcGcifSwiaWF0IjoxNjk1OTIzNzQzLCJleHAiOjE2OTg1MTU3NDN9.sFkWVKid0BsXAfShr-9y-j_LFag9ch4wsjX_mPpgKGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/binhLuan/update-binh-luan/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"binhLuan",
+								"update-binh-luan",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
